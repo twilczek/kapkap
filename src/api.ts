@@ -8,6 +8,7 @@ const todoPath = "/api/todos";
 
 export const useTodos = () => useSWR<Todo[]>(todoPath, fetcher);
 
+console.log("WILK LOADED");
 export const createTodo = async (text: string) => {
   mutate(
     todoPath,
