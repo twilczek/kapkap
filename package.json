@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "yarn migrate:deploy && next build",
+    "build": "sleep 5 && yarn migrate:deploy && next build",
     "start": "next start --port ${PORT-3000}",
     "migrate:dev": "prisma migrate dev",
-    "migrate:deploy": "sleep 3 && prisma migrate deploy",
+    "migrate:deploy": "sleep 5 && prisma migrate deploy",
     "migrate:status": "prisma migrate status",
     "generate": "prisma generate"
   },
